@@ -1,0 +1,362 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A90ADAA316A4272300F3D9F0 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A90ADAA216A4272300F3D9F0 /* UIKit.framework */; };
+		A90ADAA516A4272300F3D9F0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A90ADAA416A4272300F3D9F0 /* Foundation.framework */; };
+		A90ADAA716A4272300F3D9F0 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A90ADAA616A4272300F3D9F0 /* CoreGraphics.framework */; };
+		A90ADAAD16A4272300F3D9F0 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A90ADAAB16A4272300F3D9F0 /* InfoPlist.strings */; };
+		A90ADAAF16A4272300F3D9F0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A90ADAAE16A4272300F3D9F0 /* main.m */; };
+		A90ADAB316A4272300F3D9F0 /* PMAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A90ADAB216A4272300F3D9F0 /* PMAppDelegate.m */; };
+		A90ADAB516A4272300F3D9F0 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = A90ADAB416A4272300F3D9F0 /* Default.png */; };
+		A90ADAB716A4272300F3D9F0 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A90ADAB616A4272300F3D9F0 /* Default@2x.png */; };
+		A90ADAB916A4272300F3D9F0 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A90ADAB816A4272300F3D9F0 /* Default-568h@2x.png */; };
+		A90ADABC16A4272300F3D9F0 /* PMViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A90ADABB16A4272300F3D9F0 /* PMViewController.m */; };
+		A90ADABF16A4272300F3D9F0 /* PMViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A90ADABD16A4272300F3D9F0 /* PMViewController.xib */; };
+		A9AC3B6816A96FD500DA0994 /* NSDate+Helpers.m in Sources */ = {isa = PBXBuildFile; fileRef = A9AC3B5C16A96FD500DA0994 /* NSDate+Helpers.m */; };
+		A9AC3B6916A96FD500DA0994 /* NSLocale+Helpers.m in Sources */ = {isa = PBXBuildFile; fileRef = A9AC3B5E16A96FD500DA0994 /* NSLocale+Helpers.m */; };
+		A9AC3B6A16A96FD500DA0994 /* PMDatePickerTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = A9AC3B6116A96FD500DA0994 /* PMDatePickerTableView.m */; };
+		A9AC3B6B16A96FD500DA0994 /* PMDatePickerTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A9AC3B6316A96FD500DA0994 /* PMDatePickerTableViewCell.m */; };
+		A9AC3B6C16A96FD500DA0994 /* PMTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = A9AC3B6516A96FD500DA0994 /* PMTableView.m */; };
+		A9AC3B6D16A96FD500DA0994 /* PMDatePicker.m in Sources */ = {isa = PBXBuildFile; fileRef = A9AC3B6716A96FD500DA0994 /* PMDatePicker.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		A90ADA9E16A4272300F3D9F0 /* PMDatePickerDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PMDatePickerDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A90ADAA216A4272300F3D9F0 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		A90ADAA416A4272300F3D9F0 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		A90ADAA616A4272300F3D9F0 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		A90ADAAA16A4272300F3D9F0 /* PMDatePickerDemo-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "PMDatePickerDemo-Info.plist"; sourceTree = "<group>"; };
+		A90ADAAC16A4272300F3D9F0 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		A90ADAAE16A4272300F3D9F0 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		A90ADAB016A4272300F3D9F0 /* PMDatePickerDemo-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PMDatePickerDemo-Prefix.pch"; sourceTree = "<group>"; };
+		A90ADAB116A4272300F3D9F0 /* PMAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PMAppDelegate.h; sourceTree = "<group>"; };
+		A90ADAB216A4272300F3D9F0 /* PMAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PMAppDelegate.m; sourceTree = "<group>"; };
+		A90ADAB416A4272300F3D9F0 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		A90ADAB616A4272300F3D9F0 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		A90ADAB816A4272300F3D9F0 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		A90ADABA16A4272300F3D9F0 /* PMViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PMViewController.h; sourceTree = "<group>"; };
+		A90ADABB16A4272300F3D9F0 /* PMViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PMViewController.m; sourceTree = "<group>"; };
+		A90ADABE16A4272300F3D9F0 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/PMViewController.xib; sourceTree = "<group>"; };
+		A9AC3B5B16A96FD500DA0994 /* NSDate+Helpers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+Helpers.h"; sourceTree = "<group>"; };
+		A9AC3B5C16A96FD500DA0994 /* NSDate+Helpers.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+Helpers.m"; sourceTree = "<group>"; };
+		A9AC3B5D16A96FD500DA0994 /* NSLocale+Helpers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSLocale+Helpers.h"; sourceTree = "<group>"; };
+		A9AC3B5E16A96FD500DA0994 /* NSLocale+Helpers.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSLocale+Helpers.m"; sourceTree = "<group>"; };
+		A9AC3B6016A96FD500DA0994 /* PMDatePickerTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PMDatePickerTableView.h; sourceTree = "<group>"; };
+		A9AC3B6116A96FD500DA0994 /* PMDatePickerTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PMDatePickerTableView.m; sourceTree = "<group>"; };
+		A9AC3B6216A96FD500DA0994 /* PMDatePickerTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PMDatePickerTableViewCell.h; sourceTree = "<group>"; };
+		A9AC3B6316A96FD500DA0994 /* PMDatePickerTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PMDatePickerTableViewCell.m; sourceTree = "<group>"; };
+		A9AC3B6416A96FD500DA0994 /* PMTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PMTableView.h; sourceTree = "<group>"; };
+		A9AC3B6516A96FD500DA0994 /* PMTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PMTableView.m; sourceTree = "<group>"; };
+		A9AC3B6616A96FD500DA0994 /* PMDatePicker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PMDatePicker.h; sourceTree = "<group>"; };
+		A9AC3B6716A96FD500DA0994 /* PMDatePicker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PMDatePicker.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A90ADA9B16A4272300F3D9F0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A90ADAA316A4272300F3D9F0 /* UIKit.framework in Frameworks */,
+				A90ADAA516A4272300F3D9F0 /* Foundation.framework in Frameworks */,
+				A90ADAA716A4272300F3D9F0 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A90ADA9316A4272300F3D9F0 = {
+			isa = PBXGroup;
+			children = (
+				A9AC3B5916A96FD500DA0994 /* PMDatePicker */,
+				A90ADAA816A4272300F3D9F0 /* PMDatePickerDemo */,
+				A90ADAA116A4272300F3D9F0 /* Frameworks */,
+				A90ADA9F16A4272300F3D9F0 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A90ADA9F16A4272300F3D9F0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A90ADA9E16A4272300F3D9F0 /* PMDatePickerDemo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A90ADAA116A4272300F3D9F0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A90ADAA216A4272300F3D9F0 /* UIKit.framework */,
+				A90ADAA416A4272300F3D9F0 /* Foundation.framework */,
+				A90ADAA616A4272300F3D9F0 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A90ADAA816A4272300F3D9F0 /* PMDatePickerDemo */ = {
+			isa = PBXGroup;
+			children = (
+				A90ADAB116A4272300F3D9F0 /* PMAppDelegate.h */,
+				A90ADAB216A4272300F3D9F0 /* PMAppDelegate.m */,
+				A90ADABA16A4272300F3D9F0 /* PMViewController.h */,
+				A90ADABB16A4272300F3D9F0 /* PMViewController.m */,
+				A90ADABD16A4272300F3D9F0 /* PMViewController.xib */,
+				A90ADAA916A4272300F3D9F0 /* Supporting Files */,
+			);
+			path = PMDatePickerDemo;
+			sourceTree = SOURCE_ROOT;
+		};
+		A90ADAA916A4272300F3D9F0 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A90ADAAA16A4272300F3D9F0 /* PMDatePickerDemo-Info.plist */,
+				A90ADAAB16A4272300F3D9F0 /* InfoPlist.strings */,
+				A90ADAAE16A4272300F3D9F0 /* main.m */,
+				A90ADAB016A4272300F3D9F0 /* PMDatePickerDemo-Prefix.pch */,
+				A90ADAB416A4272300F3D9F0 /* Default.png */,
+				A90ADAB616A4272300F3D9F0 /* Default@2x.png */,
+				A90ADAB816A4272300F3D9F0 /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A9AC3B5916A96FD500DA0994 /* PMDatePicker */ = {
+			isa = PBXGroup;
+			children = (
+				A9AC3B5A16A96FD500DA0994 /* Helpers */,
+				A9AC3B5F16A96FD500DA0994 /* Internal classes */,
+				A9AC3B6616A96FD500DA0994 /* PMDatePicker.h */,
+				A9AC3B6716A96FD500DA0994 /* PMDatePicker.m */,
+			);
+			path = PMDatePicker;
+			sourceTree = "<group>";
+		};
+		A9AC3B5A16A96FD500DA0994 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				A9AC3B5B16A96FD500DA0994 /* NSDate+Helpers.h */,
+				A9AC3B5C16A96FD500DA0994 /* NSDate+Helpers.m */,
+				A9AC3B5D16A96FD500DA0994 /* NSLocale+Helpers.h */,
+				A9AC3B5E16A96FD500DA0994 /* NSLocale+Helpers.m */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		A9AC3B5F16A96FD500DA0994 /* Internal classes */ = {
+			isa = PBXGroup;
+			children = (
+				A9AC3B6016A96FD500DA0994 /* PMDatePickerTableView.h */,
+				A9AC3B6116A96FD500DA0994 /* PMDatePickerTableView.m */,
+				A9AC3B6216A96FD500DA0994 /* PMDatePickerTableViewCell.h */,
+				A9AC3B6316A96FD500DA0994 /* PMDatePickerTableViewCell.m */,
+				A9AC3B6416A96FD500DA0994 /* PMTableView.h */,
+				A9AC3B6516A96FD500DA0994 /* PMTableView.m */,
+			);
+			path = "Internal classes";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A90ADA9D16A4272300F3D9F0 /* PMDatePickerDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A90ADAC216A4272300F3D9F0 /* Build configuration list for PBXNativeTarget "PMDatePickerDemo" */;
+			buildPhases = (
+				A90ADA9A16A4272300F3D9F0 /* Sources */,
+				A90ADA9B16A4272300F3D9F0 /* Frameworks */,
+				A90ADA9C16A4272300F3D9F0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PMDatePickerDemo;
+			productName = PMDatePicker;
+			productReference = A90ADA9E16A4272300F3D9F0 /* PMDatePickerDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A90ADA9516A4272300F3D9F0 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = PM;
+				LastUpgradeCheck = 0450;
+				ORGANIZATIONNAME = "Pavel Mazurin";
+			};
+			buildConfigurationList = A90ADA9816A4272300F3D9F0 /* Build configuration list for PBXProject "PMDatePickerDemo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = A90ADA9316A4272300F3D9F0;
+			productRefGroup = A90ADA9F16A4272300F3D9F0 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A90ADA9D16A4272300F3D9F0 /* PMDatePickerDemo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A90ADA9C16A4272300F3D9F0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A90ADAAD16A4272300F3D9F0 /* InfoPlist.strings in Resources */,
+				A90ADAB516A4272300F3D9F0 /* Default.png in Resources */,
+				A90ADAB716A4272300F3D9F0 /* Default@2x.png in Resources */,
+				A90ADAB916A4272300F3D9F0 /* Default-568h@2x.png in Resources */,
+				A90ADABF16A4272300F3D9F0 /* PMViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A90ADA9A16A4272300F3D9F0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A90ADAAF16A4272300F3D9F0 /* main.m in Sources */,
+				A90ADAB316A4272300F3D9F0 /* PMAppDelegate.m in Sources */,
+				A90ADABC16A4272300F3D9F0 /* PMViewController.m in Sources */,
+				A9AC3B6816A96FD500DA0994 /* NSDate+Helpers.m in Sources */,
+				A9AC3B6916A96FD500DA0994 /* NSLocale+Helpers.m in Sources */,
+				A9AC3B6A16A96FD500DA0994 /* PMDatePickerTableView.m in Sources */,
+				A9AC3B6B16A96FD500DA0994 /* PMDatePickerTableViewCell.m in Sources */,
+				A9AC3B6C16A96FD500DA0994 /* PMTableView.m in Sources */,
+				A9AC3B6D16A96FD500DA0994 /* PMDatePicker.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		A90ADAAB16A4272300F3D9F0 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A90ADAAC16A4272300F3D9F0 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		A90ADABD16A4272300F3D9F0 /* PMViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A90ADABE16A4272300F3D9F0 /* en */,
+			);
+			name = PMViewController.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A90ADAC016A4272300F3D9F0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		A90ADAC116A4272300F3D9F0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A90ADAC316A4272300F3D9F0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "PMDatePickerDemo/PMDatePickerDemo-Prefix.pch";
+				INFOPLIST_FILE = "PMDatePickerDemo/PMDatePickerDemo-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				PRODUCT_NAME = PMDatePickerDemo;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		A90ADAC416A4272300F3D9F0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "PMDatePickerDemo/PMDatePickerDemo-Prefix.pch";
+				INFOPLIST_FILE = "PMDatePickerDemo/PMDatePickerDemo-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				PRODUCT_NAME = PMDatePickerDemo;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A90ADA9816A4272300F3D9F0 /* Build configuration list for PBXProject "PMDatePickerDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A90ADAC016A4272300F3D9F0 /* Debug */,
+				A90ADAC116A4272300F3D9F0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A90ADAC216A4272300F3D9F0 /* Build configuration list for PBXNativeTarget "PMDatePickerDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A90ADAC316A4272300F3D9F0 /* Debug */,
+				A90ADAC416A4272300F3D9F0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A90ADA9516A4272300F3D9F0 /* Project object */;
+}
