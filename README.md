@@ -10,7 +10,7 @@ This componenit is supposed to be a fully customizable drop-in replacement for U
 
 Legal
 ============
-PMCalendar is released under the MIT License.
+PMDatePicker is released under the MIT License.
 
 Customizable properties
 ============
