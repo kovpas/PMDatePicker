@@ -1,7 +1,7 @@
 PMDatePicker
 ============
 
-This componenit is supposed to be a customizable drop-in replacement for UIDatePicker. At the moment `PMDatePicker` supports 2 of 4 UIDatePicker modes:
+This componenit is supposed to be a customizable drop-in replacement for UIDatePicker. At the moment `PMDatePicker` supports two of four UIDatePicker modes:
 
 - ~~`UIDatePickerModeTime`~~  
 - ~~`UIDatePickerModeDate`~~  
@@ -17,7 +17,7 @@ Customizable properties
 
 The following properties are available for customization:  
 ``` objective-c
-@property (nonatomic, retain) UIFont *font;                         // default is [UIFont boldSystemFontOfSize:24]
+@property (nonatomic, strong) UIFont *font;                         // default is [UIFont boldSystemFontOfSize:24]
 @property (nonatomic, assign) CGFloat rowHeight;                    // default is 45.0f
 
 @property (nonatomic, strong, readonly) UIImageView *frameImageView;
