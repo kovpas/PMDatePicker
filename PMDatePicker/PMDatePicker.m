@@ -771,7 +771,7 @@ static const NSDictionary* tagsForDateFormatSymbols;
         _currentDateComponents.hour += add;
         [self setDate:[_calendar dateFromComponents:_currentDateComponents]
              animated:YES
-dontAutoscrollTablesWithTags:@[@(PMDatePickerTagHour)]];
+dontAutoscrollTablesWithTags:@[@(PMDatePickerTagHour), @(PMDatePickerTagMinute)]];
     }
 }
 
