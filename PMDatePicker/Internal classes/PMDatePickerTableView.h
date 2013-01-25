@@ -14,5 +14,6 @@
 @interface PMDatePickerTableView : PMTableView
 
 @property (nonatomic, assign) NSUInteger index;
+@property (nonatomic, assign, getter=isScrolling) BOOL scrolling;
 
 @end

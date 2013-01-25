@@ -37,6 +37,7 @@
 {
     [super scrollViewDidScroll:scrollView];
     [_centerTimer invalidate];
+    _scrolling = YES;
 
     if (!self.tracking)
     {
@@ -67,6 +68,7 @@
 
 - (void) alignRowsToCenterAnimated:(BOOL)animated
 {
+    self.scrolling = NO;
     CGPoint centralPoint = CGPointMake(CGRectGetMidX(self.bounds), self.contentOffset.y + self.frame.size.height / 2);
     NSInteger centralCellIndex = [self indexForRowAtPoint:centralPoint];
     UITableViewCell *cell = [self cellForRowAtIndex:centralCellIndex];
@@ -85,6 +87,7 @@
             [self.tableDelegate tableView:self didSelectRowAtIndex:newIndex];
         }
         self.autoscrolling = NO;
+        self.scrolling = NO;
     });
 }
 

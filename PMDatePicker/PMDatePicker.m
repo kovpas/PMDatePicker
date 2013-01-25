@@ -345,7 +345,10 @@ static const NSDictionary* tagsForDateFormatSymbols;
     {
         _date = [NSDate date];
     }
-    [self sendActionsForControlEvents:UIControlEventValueChanged];
+    if (![self isStillScrolling])
+    {
+        [self sendActionsForControlEvents:UIControlEventValueChanged];
+    }
 
     _numberOfDaysInSelectedMonth = [_calendar rangeOfUnit:NSDayCalendarUnit
                                                    inUnit:NSMonthCalendarUnit
@@ -577,15 +580,7 @@ static const NSDictionary* tagsForDateFormatSymbols;
             {
                 hour = (index + 11) % 12 + 1;
             }
-//            NSInteger day = _currentDateComponents.day;
-//            NSInteger month = _currentDateComponents.month;
-//            NSInteger year = _currentDateComponents.year;
             cell.label.text = [NSString stringWithFormat:@"%d", hour];
-//            if ((_minimumDate && (((year == [_minDateComponents year]) && (month == [_minDateComponents month]) && (day < [_minDateComponents day]))))
-//                     || (_maximumDate && ((year == [_maxDateComponents year]) && (month == [_maxDateComponents month]) && (day > [_maxDateComponents day]))))
-//            {
-//                cell.type = PMStringTableViewCellTypeDisabled;
-//            }
             break;
         }
         case PMDatePickerTagDay:
@@ -753,7 +748,7 @@ static const NSDictionary* tagsForDateFormatSymbols;
         return;
     }
 
-    if (![self checkDateConstraints:YES])
+    if (![self isStillScrolling] && ![self checkDateConstraints:YES])
     {
         [self sendActionsForControlEvents:UIControlEventValueChanged];
     }
@@ -763,15 +758,11 @@ static const NSDictionary* tagsForDateFormatSymbols;
 {
     if (!_is24Hour && (tableView.tag == PMDatePickerTagHour))
     {
-        NSInteger add = 12;
-        if (direction == PMTableViewScrollDown)
-        {
-            add = -12;
-        }
-        _currentDateComponents.hour += add;
-        [self setDate:[_calendar dateFromComponents:_currentDateComponents]
-             animated:YES
-dontAutoscrollTablesWithTags:@[@(PMDatePickerTagHour), @(PMDatePickerTagMinute)]];
+        PMDatePickerTableView *tv = _tableViewsByTag[@(PMDatePickerTagAmPm)];
+        NSInteger row = 1 - [tv indexForSelectedRow];
+        [tv scrollToRowAtIndex:row
+                     atScrollPosition:UITableViewScrollPositionMiddle
+                             animated:YES];
     }
 }
 
@@ -834,6 +825,21 @@ dontAutoscrollTablesWithTags:@[@(PMDatePickerTagHour), @(PMDatePickerTagMinute)]
     [self bringSubviewToFront:_shadowImageView];
     [self bringSubviewToFront:_selectionImageView];
     [self bringSubviewToFront:_frameImageView];
+}
+
+- (BOOL)isStillScrolling
+{
+    BOOL stillScrolling = NO;
+    for (NSNumber *tag in columnsForPickerModes[@(_datePickerMode)])
+    {
+        PMDatePickerTableView *tableView = _visibleTableViewsByTag[tag];
+        if ([tableView isScrolling])
+        {
+            stillScrolling = YES;
+            break;
+        }
+    }
+    return stillScrolling;
 }
 
 - (CGFloat)widthForTableWithTag:(PMDatePickerTags)tag
