@@ -29,7 +29,7 @@
 
 // ==============================
 // PMDatePicker custom properties
-@property (nonatomic, retain) UIFont *font;                         // default is [UIFont boldSystemFontOfSize:24]
+@property (nonatomic, strong) UIFont *font;                         // default is [UIFont boldSystemFontOfSize:24]
 @property (nonatomic, assign) CGFloat rowHeight;                    // default is 45.0f
 
 @property (nonatomic, strong, readonly) UIImageView *frameImageView;
