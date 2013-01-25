@@ -1,7 +1,7 @@
 PMDatePicker
 ============
 
-This componenit is supposed to be a fully customizable drop-in replacement for UIDatePicker. At the moment it supports only 2 of 4 UIDatePicker modes:
+This componenit is supposed to be a customizable drop-in replacement for UIDatePicker. At the moment `PMDatePicker` supports 2 of 4 UIDatePicker modes:
 
 - ~~`UIDatePickerModeTime`~~  
 - ~~`UIDatePickerModeDate`~~  
@@ -10,7 +10,7 @@ This componenit is supposed to be a fully customizable drop-in replacement for U
 
 Legal
 ============
-PMDatePicker is released under the MIT License.
+`PMDatePicker` is released under the MIT License.
 
 Customizable properties
 ============
@@ -28,5 +28,3 @@ The following properties are available for customization:
 ```
 
 For the reference see enclosed demo project.
-
-
