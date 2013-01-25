@@ -3,10 +3,10 @@ PMDatePicker
 
 This componenit is supposed to be a fully customizable drop-in replacement for UIDatePicker. At the moment it supports only 2 of 4 UIDatePicker modes:
 
-- [x] UIDatePickerModeTime  
-- [x] UIDatePickerModeDate  
-- [ ] UIDatePickerModeDateAndTime  
-- [ ] UIDatePickerModeCountDownTimer  
+- ~~`UIDatePickerModeTime`~~  
+- ~~`UIDatePickerModeDate`~~  
+- `UIDatePickerModeDateAndTime`  
+- `UIDatePickerModeCountDownTimer`  
 
 Legal
 ============
