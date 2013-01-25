@@ -1,0 +1,20 @@
+//
+// Prefix header for all source files of the 'PMDatePicker' target in the 'PMDatePicker' project
+//
+
+#import <Availability.h>
+
+#ifndef __IPHONE_4_0
+#warning "This project uses features only available in iOS SDK 4.0 and later."
+#endif
+
+#ifdef __OBJC__
+    #import <UIKit/UIKit.h>
+    #import <Foundation/Foundation.h>
+#endif
+
+#define UIColorMakeRGBA(nRed, nGreen, nBlue, nAlpha) [UIColor colorWithRed:(nRed)/255.0f \
+                                                                     green:(nGreen)/255.0f \
+                                                                      blue:(nBlue)/255.0f \
+                                                                     alpha:nAlpha]
+#define UIColorMakeRGB(nRed, nGreen, nBlue) UIColorMakeRGBA(nRed, nGreen, nBlue, 1.0f)
