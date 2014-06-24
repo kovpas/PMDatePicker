@@ -511,7 +511,7 @@ static const NSDictionary* tagsForDateFormatSymbols;
 
 - (NSInteger)numberOfRowsInTableView:(PMTableView *)tableView
 {
-    NSInteger result = 0;
+    NSInteger result = 1;
     switch (tableView.tag) {
         case PMDatePickerTagMonth:
             result = 12;
